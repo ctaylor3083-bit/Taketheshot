@@ -23,7 +23,25 @@
 
 <img src="https://hits.sh/taketheshot.org.svg?style=flat-square&label=Visitors"
      alt="Visitor Count">
-  <script data-goatcounter="https://ctaylor3083.goatcounter.com/count"
+  <br><br>
+
+<!-- Unique visitor counter -->
+<div id="goatcounter"></div>
+
+<script>
+window.goatcounter = {
+    path: function(p) { return location.pathname; }
+}
+</script>
+
+<script data-goatcounter="https://ctaylor3083.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+<script>
+window.goatcounter.visit_count({
+    append: '#goatcounter'
+});
+</script>
+
 </body>
 </html>
